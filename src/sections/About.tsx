@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const About = () => {
-    const { ref: sectionRef, isVisible } = useScrollAnimation();
+    const { ref: sectionRef } = useScrollAnimation();
     const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation({ threshold: 0.2 });
     const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation({ threshold: 0.2 });
 

@@ -36,7 +36,7 @@ export const useScrollAnimation = (options: ScrollAnimationOptions = {}) => {
     return { ref, isVisible };
 };
 
-export const useStaggeredAnimation = (itemCount: number, options: ScrollAnimationOptions = {}) => {
+export const useStaggeredAnimation = (options: ScrollAnimationOptions = {}) => {
     const { ref, isVisible } = useScrollAnimation(options);
 
     const getStaggerDelay = (index: number) => ({
