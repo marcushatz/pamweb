@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* ===================================
+   Whiskers & Wags Design System
+   Premium, Minimal, Coastal Aesthetic
+   =================================== */
+
+/* Custom Theme Configuration */
+@theme {
+  /* Coastal Color Palette */
+  --color-sage: #7C9885;
+  --color-sage-light: #A8C4B0;
+  --color-sage-dark: #5A7A64;
+  --color-coastal: #6B8FAD;
+  --color-coastal-light: #8FB3D1;
+  --color-sand: #E8DDD4;
+  --color-sand-light: #F5F0EB;
+  --color-cream: #FAF8F5;
+  --color-charcoal: #2D3436;
+  --color-charcoal-light: #4A4F51;
+  --color-muted: #6B7280;
+  --color-muted-light: #9CA3AF;
+  
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Spacing */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-charcoal);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+p {
+  color: var(--color-muted);
+}
+
+/* Premium Button Styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-sage);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-sage-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(124, 152, 133, 0.3);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--color-sage);
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-sage);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-sage);
+  color: white;
+}
+
+/* Section Spacing */
+.section {
+  padding: var(--spacing-section) 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-section-sm) 1rem;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtle Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Trust Badge */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-sand-light);
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+/* Divider */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-sage), var(--color-coastal));
+  border-radius: 2px;
+  margin: 1.5rem 0;
+}
