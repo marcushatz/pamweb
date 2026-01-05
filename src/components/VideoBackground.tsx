@@ -13,6 +13,7 @@ const VideoBackground = ({
 }: VideoBackgroundProps) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isVisible, setIsVisible] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -48,24 +49,31 @@ const VideoBackground = ({
             <div className="absolute inset-0 z-0">
                 <video
                     ref={videoRef}
-                    className="absolute w-full h-full object-cover"
+                    className={`absolute w-full h-full object-cover transition-opacity duration-1500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                     autoPlay
                     muted
                     loop
                     playsInline
                     preload="auto"
+                    onLoadedData={() => setIsLoaded(true)}
                 >
-                    {/* Using a reliable Pexels video - dogs playing */}
                     <source
-                        src="https://videos.pexels.com/video-files/4974055/4974055-uhd_2560_1440_25fps.mp4"
+                        src="/dogvid1.mp4"
                         type="video/mp4"
                     />
                 </video>
-                {/* Overlay for readability */}
+
+                {/* Multi-layer overlay for depth */}
                 <div
-                    className="absolute inset-0 bg-charcoal"
-                    style={{ opacity: overlayOpacity }}
+                    className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/40 to-charcoal/60"
+                    style={{ opacity: overlayOpacity * 1.6 }}
                 />
+
+                {/* Subtle vignette effect */}
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
+
+                {/* Top gradient for navbar legibility */}
+                <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-charcoal/40 to-transparent" />
             </div>
 
             {/* Content */}
