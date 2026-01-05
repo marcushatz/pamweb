@@ -59,9 +59,17 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 text-center">
-                    <p className="text-white/40 text-xs tracking-wide">
+                    <p className="text-white/40 text-xs tracking-wide mb-2">
                         &copy; {currentYear} Whiskers & Wags Pet Services, LLC
                     </p>
+                    <a
+                        href="https://hatwebs.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/30 text-[10px] tracking-widest hover:text-white/60 transition-colors uppercase block"
+                    >
+                        Made by Hatwebs
+                    </a>
                 </div>
             </div>
         </footer>
