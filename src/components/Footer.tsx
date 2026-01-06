@@ -1,3 +1,5 @@
+import hatMask from '../assets/hat-mask.png';
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
@@ -58,18 +60,52 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-white/10 pt-8 text-center">
-                    <p className="text-white/40 text-xs tracking-wide mb-2">
-                        &copy; {currentYear} Whiskers & Wags Pet Services, LLC
-                    </p>
-                    <a
-                        href="https://hatwebs.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white/30 text-[10px] tracking-widest hover:text-white/60 transition-colors uppercase block"
-                    >
-                        Made by Hatwebs
-                    </a>
+                <div className="border-t border-white/10 pt-8">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                        <p className="text-white/40 text-xs tracking-wide">
+                            &copy; {currentYear} Whiskers & Wags Pet Services, LLC. All rights reserved.
+                        </p>
+
+                        <div className="flex gap-8">
+                            <a href="#" className="text-white/40 text-xs hover:text-white transition-colors duration-300">
+                                Privacy Policy
+                            </a>
+                            <a href="#" className="text-white/40 text-xs hover:text-white transition-colors duration-300">
+                                Terms of Service
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-center mt-8">
+                        <a
+                            href="https://hatwebs.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-0 opacity-60 hover:opacity-100 transition-opacity duration-300 group"
+                            aria-label="Made by Hatwebs"
+                        >
+                            <span className="text-white/40 text-[10px] uppercase tracking-widest font-medium mr-1.5">
+                                Website by
+                            </span>
+
+                            {/* Hatwebs Logo Graphic - Transparent Image */}
+                            <img
+                                src={hatMask}
+                                alt="Hatwebs Logo"
+                                className="w-14 h-14 object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 -mr-2"
+                            />
+
+                            {/* Text Part */}
+                            <div className="flex flex-col items-start leading-none gap-0 subpixel-antialiased transform-gpu">
+                                <span className="text-lg font-bold text-[#607D8B] tracking-tight group-hover:text-[#90A4AE] transition-colors">
+                                    Hatwebs
+                                </span>
+                                <span className="text-[7px] font-bold tracking-[0.2em] text-[#546E7A] uppercase group-hover:text-[#78909C] transition-colors">
+                                    Digital Design
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
