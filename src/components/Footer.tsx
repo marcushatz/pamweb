@@ -88,11 +88,10 @@ const Footer = () => {
                                 Website by
                             </span>
 
-                            {/* Hatwebs Logo Graphic - Transparent Image */}
                             <img
                                 src={hatMask}
                                 alt="Hatwebs Logo"
-                                className="w-14 h-14 object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 -mr-2"
+                                className="h-7 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 mr-1"
                             />
 
                             {/* Text Part */}
@@ -100,7 +99,7 @@ const Footer = () => {
                                 <span className="text-lg font-bold text-[#607D8B] tracking-tight group-hover:text-[#90A4AE] transition-colors">
                                     Hatwebs
                                 </span>
-                                <span className="text-[7px] font-bold tracking-[0.2em] text-[#546E7A] uppercase group-hover:text-[#78909C] transition-colors">
+                                <span className="text-[7px] font-bold tracking-[0.2em] text-[#546E7A] uppercase group-hover:text-[#78909C] transition-colors -mt-1">
                                     Digital Design
                                 </span>
                             </div>
