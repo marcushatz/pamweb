@@ -89,7 +89,7 @@ const Hero = () => {
 
             {/* Scroll indicator */}
             <div
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-0 animate-hero-fade-up"
+                className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 opacity-0 animate-hero-fade-up"
                 style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}
             >
                 <div className="animate-float">

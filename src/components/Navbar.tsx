@@ -55,6 +55,15 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a
+                        href="tel:3029430873"
+                        className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-400 ${isScrolled
+                            ? 'text-muted hover:text-charcoal hover:bg-sand/60'
+                            : 'text-white/80 hover:text-white hover:bg-white/10'
+                            }`}
+                    >
+                        302-943-0873
+                    </a>
+                    <a
                         href="#book"
                         className={`ml-3 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-500 ${isScrolled
                             ? 'bg-charcoal text-white hover:bg-charcoal-light shadow-sm hover:shadow-md hover:-translate-y-0.5'
@@ -111,6 +120,12 @@ const Navbar = () => {
                                 {link.label}
                             </a>
                         ))}
+                        <a
+                            href="tel:3029430873"
+                            className="text-muted hover:text-charcoal hover:bg-sand/30 transition-all duration-300 text-sm font-medium py-3.5 px-5 rounded-xl block"
+                        >
+                            Or Call Us: 302-943-0873
+                        </a>
                         <a
                             href="#book"
                             onClick={() => setIsMobileMenuOpen(false)}
