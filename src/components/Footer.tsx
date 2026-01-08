@@ -39,12 +39,6 @@ const Footer = () => {
                             >
                                 302-943-0873
                             </a>
-                            <a
-                                href="mailto:hello@whiskersandwags.com"
-                                className="hover:text-white transition-colors duration-300 block"
-                            >
-                                hello@whiskersandwags.com
-                            </a>
                         </div>
                     </div>
 
