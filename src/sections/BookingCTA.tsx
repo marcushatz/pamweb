@@ -21,12 +21,12 @@ const BookingCTA = () => {
                 />
             </div>
 
-            {/* Mobile Background (Simple & Stable) */}
-            <div className="md:hidden absolute inset-0 -z-50 w-full h-full">
+            {/* Mobile Background (Oversized to prevent gray gaps) */}
+            <div className="md:hidden absolute inset-0 -z-50 w-full h-full overflow-hidden">
                 <img
                     src="/dog1.png"
                     alt="Background"
-                    className="w-full h-full object-cover opacity-100"
+                    className="w-full h-[120%] -top-[10%] absolute object-cover opacity-100 scale-105"
                 />
             </div>
 
