@@ -13,11 +13,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div>
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center">
-                                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M4.5 9.5C4.5 8.12 5.62 7 7 7s2.5 1.12 2.5 2.5S8.38 12 7 12s-2.5-1.12-2.5-2.5zm9 0c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zM12 18c-2.76 0-5-2.24-5-5h10c0 2.76-2.24 5-5 5z" />
-                                </svg>
-                            </div>
+
                             <span className="font-medium text-lg tracking-tight">
                                 Whiskers & Wags
                             </span>
