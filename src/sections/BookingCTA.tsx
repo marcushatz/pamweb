@@ -11,16 +11,27 @@ const BookingCTA = () => {
     ];
 
     return (
-        <section id="book" className="relative py-24 md:py-32" style={{ clipPath: 'inset(0)' }}>
-            {/* Fixed Background Layer - Clipped by Parent */}
-            <div className="fixed inset-0 w-full h-full -z-50">
+        <section id="book" className="relative py-24 md:py-32 md:[clip-path:inset(0)]">
+            {/* Desktop Background (Fixed Window Effect) */}
+            <div className="hidden md:block fixed inset-0 w-full h-full -z-50">
                 <img
                     src="/dog1.png"
                     alt="Background"
                     className="w-full h-full object-cover scale-[1.5]"
                 />
-                <div className="absolute inset-0 bg-black/40" />
             </div>
+
+            {/* Mobile Background (Classic Fixed/Parallax) */}
+            <div
+                className="md:hidden absolute inset-0 -z-50 w-full h-full bg-fixed bg-center bg-no-repeat"
+                style={{
+                    backgroundImage: "url('/dog1.png')",
+                    backgroundSize: 'auto 150%'
+                }}
+            />
+
+            {/* Shared Dark Overlay */}
+            <div className="absolute inset-0 bg-black/40 -z-40" />
 
             {/* Content Layer */}
             <div className="container mx-auto px-6 relative z-10">
