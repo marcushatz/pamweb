@@ -94,7 +94,7 @@ const Services = () => {
                     </p>
 
                     {/* Additional Perks - Moved to Top */}
-                    <div className="mt-12 mb-8 text-center scroll-fade-up">
+                    <div className="mt-12 mb-8 text-center">
                         <div className="inline-flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center bg-white/60 backdrop-blur-sm px-8 py-3 rounded-full border border-sand/30 shadow-sm">
                             <div className="flex items-center gap-2.5">
                                 <div className="w-5 h-5 rounded-full bg-sage/20 flex items-center justify-center">
