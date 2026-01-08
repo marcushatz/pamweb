@@ -30,9 +30,15 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-medium mb-5 text-white text-sm tracking-wide">Contact</h4>
+                        <h4 className="font-medium mb-5 text-white text-sm tracking-wide opacity-100">Contact</h4>
                         <div className="space-y-3 text-white/50 text-sm">
                             <p>Melbourne, Florida</p>
+                            <a
+                                href="tel:302-943-0873"
+                                className="hover:text-white transition-colors duration-300 block"
+                            >
+                                302-943-0873
+                            </a>
                             <a
                                 href="mailto:hello@whiskersandwags.com"
                                 className="hover:text-white transition-colors duration-300 block"
