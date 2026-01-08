@@ -95,11 +95,7 @@ p {
   color: var(--color-muted);
 }
 
-/* Selection styling */
-::selection {
-  background-color: var(--color-charcoal);
-  color: white;
-}
+
 
 /* Premium Button Styles */
 .btn-primary {
