@@ -100,6 +100,29 @@ const Services = () => {
                         <ServiceCard key={index} {...service} index={index} isVisible={gridVisible} />
                     ))}
                 </div>
+
+                {/* Additional Perks */}
+                <div className="mt-16 text-center scroll-fade-up">
+                    <div className="inline-flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center bg-white/60 backdrop-blur-sm px-8 py-4 rounded-full border border-sand/30">
+                        <div className="flex items-center gap-3">
+                            <div className="w-6 h-6 rounded-full bg-sage/20 flex items-center justify-center">
+                                <svg className="w-3.5 h-3.5 text-sage" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                </svg>
+                            </div>
+                            <span className="text-lg text-charcoal font-medium">Free Meet & Greets</span>
+                        </div>
+                        <div className="hidden md:block w-px h-6 bg-sand/50" />
+                        <div className="flex items-center gap-3">
+                            <div className="w-6 h-6 rounded-full bg-sage/20 flex items-center justify-center">
+                                <svg className="w-3.5 h-3.5 text-sage" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                </svg>
+                            </div>
+                            <span className="text-lg text-charcoal font-medium">Included Daily Updates & Photos</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
