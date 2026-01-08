@@ -26,7 +26,7 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div className="relative z-50">
-                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white/80" style={{ position: 'relative', zIndex: 60 }}>Contact</h4>
+                        <h4 className="font-semibold mb-5 text-xs tracking-wide text-white" style={{ position: 'relative', zIndex: 60 }}>Contact</h4>
                         <div className="space-y-3 text-white/70 text-sm font-normal">
                             <p>Melbourne, Florida</p>
                             <a
@@ -40,7 +40,7 @@ const Footer = () => {
 
                     {/* Social */}
                     <div className="relative z-50">
-                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white/80" style={{ position: 'relative', zIndex: 60 }}>Connect</h4>
+                        <h4 className="font-semibold mb-5 text-xs tracking-wide text-white" style={{ position: 'relative', zIndex: 60 }}>Connect</h4>
                         <a
                             href="https://www.facebook.com/profile.php?id=100095399083409"
                             target="_blank"
