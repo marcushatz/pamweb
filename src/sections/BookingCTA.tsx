@@ -21,14 +21,14 @@ const BookingCTA = () => {
                 />
             </div>
 
-            {/* Mobile Background (Oversized to prevent gray gaps) */}
-            <div className="md:hidden absolute inset-0 -z-50 w-full h-full overflow-hidden">
-                <img
-                    src="/dog1.png"
-                    alt="Background"
-                    className="w-full h-[120%] -top-[10%] absolute object-cover opacity-100 scale-105"
-                />
-            </div>
+            {/* Mobile Background (Classic Fixed/Parallax) */}
+            <div
+                className="md:hidden absolute inset-0 -z-50 w-full h-full bg-scroll bg-center bg-no-repeat"
+                style={{
+                    backgroundImage: "url('/dog1.png')",
+                    backgroundSize: 'cover'
+                }}
+            />
 
             {/* Shared Dark Overlay */}
             <div className="absolute inset-0 bg-black/40 -z-40" />
