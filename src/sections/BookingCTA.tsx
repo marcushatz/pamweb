@@ -26,7 +26,7 @@ const BookingCTA = () => {
                 className="md:hidden absolute inset-0 -z-50 w-full h-full bg-fixed bg-center bg-no-repeat"
                 style={{
                     backgroundImage: "url('/dog1.png')",
-                    backgroundSize: 'auto 110%'
+                    backgroundSize: 'cover'
                 }}
             />
 
@@ -50,10 +50,10 @@ const BookingCTA = () => {
 
                     {/* CTA Button */}
                     <a
-                        href="tel:302-943-0873"
+                        href="tel:3029430873"
                         className="group inline-flex items-center gap-3 bg-white text-charcoal px-10 py-5 rounded-full font-medium transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_40px_rgba(255,255,255,0.3)] hover:-translate-y-1"
                     >
-                        Call us to Schedule
+                        Book Your Meet & Greet
                         <svg className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
