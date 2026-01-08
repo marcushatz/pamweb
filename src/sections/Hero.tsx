@@ -3,7 +3,7 @@ import VideoBackground from '../components/VideoBackground';
 const Hero = () => {
     return (
         <VideoBackground className="min-h-screen flex items-center justify-center" overlayOpacity={0.6}>
-            <div className="container mx-auto px-6 pt-20 pb-48">
+            <div className="container mx-auto px-6 pt-20 pb-60">
                 {/* Centered Content */}
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Trust Badge */}
