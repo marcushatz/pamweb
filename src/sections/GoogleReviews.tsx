@@ -319,9 +319,9 @@ const reviews: GoogleReview[] = [
 
 const GoogleReviewCard = ({ review, isActive }: { review: GoogleReview; isActive: boolean }) => (
     <div
-        className={`absolute inset-0 transition-all duration-700 ease-out ${isActive
-            ? 'opacity-100 translate-y-0 scale-100'
-            : 'opacity-0 translate-y-6 scale-[0.98] pointer-events-none'
+        className={`transition-all duration-700 ease-out col-start-1 row-start-1 w-full ${isActive
+            ? 'opacity-100 translate-y-0 scale-100 z-10'
+            : 'opacity-0 translate-y-6 scale-[0.98] pointer-events-none z-0'
             }`}
     >
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-charcoal/[0.04] border border-sand/50 h-full flex flex-col">
@@ -438,7 +438,7 @@ const GoogleReviews = () => {
                     onMouseEnter={() => setIsPaused(true)}
                     onMouseLeave={() => setIsPaused(false)}
                 >
-                    <div className="relative h-[300px] mb-10">
+                    <div className="relative grid grid-cols-1 mb-10">
                         {reviews.map((review, index) => (
                             <GoogleReviewCard
                                 key={index}
