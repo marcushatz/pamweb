@@ -14,7 +14,7 @@ const BookingCTA = () => {
         <section id="book" className="relative z-0 py-24 md:py-32">
             {/* Background Image - Absolute, Fixed & Covered (Unified) */}
             <div
-                className="absolute inset-0 -z-20 w-full h-full bg-fixed bg-center bg-no-repeat bg-cover md:bg-[length:150%]"
+                className="absolute inset-0 -z-20 w-full h-full bg-fixed bg-center bg-no-repeat bg-cover md:bg-[length:150vmax]"
                 style={{
                     backgroundImage: "url('/dog1.png')"
                 }}
