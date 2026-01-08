@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <footer className="relative bg-[var(--color-charcoal)] text-[var(--color-cream)] py-20 overflow-hidden font-light">
             {/* Subtle decorative elements */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--color-sage)]/30 to-transparent" />
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-radial-gradient from-[var(--color-sage)]/10 to-transparent opacity-50" />
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--color-sage)]/30 to-transparent z-0" />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-radial-gradient from-[var(--color-sage)]/10 to-transparent opacity-50 z-0" />
+            <div className="container mx-auto px-6 relative z-20">
                 <div className="grid md:grid-cols-3 gap-12 mb-12">
                     {/* Brand */}
                     <div>
