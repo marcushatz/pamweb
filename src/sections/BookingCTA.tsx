@@ -26,7 +26,7 @@ const BookingCTA = () => {
                 className="md:hidden absolute inset-0 -z-50 w-full h-full bg-fixed bg-center bg-no-repeat"
                 style={{
                     backgroundImage: "url('/dog1.png')",
-                    backgroundSize: 'auto 150%'
+                    backgroundSize: 'auto 110%'
                 }}
             />
 
