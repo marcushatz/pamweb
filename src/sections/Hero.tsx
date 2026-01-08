@@ -8,7 +8,7 @@ const Hero = () => {
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Trust Badge */}
                     <div
-                        className="trust-badge mb-12 opacity-0 animate-hero-fade-up"
+                        className="trust-badge mb-8 opacity-0 animate-hero-fade-up"
                         style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
                     >
                         <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse-soft" />
@@ -17,7 +17,7 @@ const Hero = () => {
 
                     {/* Premium Headline */}
                     <h1
-                        className="mb-8 opacity-0 animate-hero-fade-up leading-tight drop-shadow-xl text-5xl md:text-7xl tracking-tight font-light"
+                        className="mb-6 opacity-0 animate-hero-fade-up leading-tight drop-shadow-xl text-5xl md:text-7xl tracking-tight font-light"
                         style={{ animationDelay: '0.4s', animationFillMode: 'forwards', color: '#FAF8F5' }}
                     >
                         Where Every Pet
@@ -26,7 +26,7 @@ const Hero = () => {
 
                     {/* Subheadline */}
                     <p
-                        className="text-lg md:text-2xl mb-14 max-w-xl mx-auto leading-relaxed font-light opacity-0 animate-hero-fade-up drop-shadow-md"
+                        className="text-lg md:text-2xl mb-10 max-w-xl mx-auto leading-relaxed font-light opacity-0 animate-hero-fade-up drop-shadow-md"
                         style={{ animationDelay: '0.6s', animationFillMode: 'forwards', color: 'rgba(250, 248, 245, 0.9)' }}
                     >
                         Personal, loving care in a real home environment.
@@ -35,7 +35,7 @@ const Hero = () => {
 
                     {/* CTA Buttons */}
                     <div
-                        className="flex flex-wrap gap-5 justify-center mb-20 opacity-0 animate-hero-fade-up"
+                        className="flex flex-wrap gap-5 justify-center mb-12 opacity-0 animate-hero-fade-up"
                         style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
                     >
                         <a
