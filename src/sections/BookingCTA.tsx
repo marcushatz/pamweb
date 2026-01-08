@@ -11,9 +11,18 @@ const BookingCTA = () => {
     ];
 
     return (
-        <section id="book" className="relative z-0 py-24 md:py-32" style={{ clipPath: 'inset(0)' }}>
-            {/* Background Image - Fixed & Zoomed (Clip-Path Parallax) */}
-            <div className="fixed inset-0 -z-20 w-full h-full">
+        <section id="book" className="relative z-0 py-24 md:py-32 overflow-hidden">
+            {/* Background Image - Absolute & Static (Mobile) */}
+            <div
+                className="absolute inset-0 -z-20 w-full h-full bg-fixed bg-center bg-no-repeat md:hidden"
+                style={{
+                    backgroundImage: "url('/dog1.png')",
+                    backgroundSize: 'auto 150%'
+                }}
+            />
+
+            {/* Background Image - Absolute & Zoomed (Desktop) */}
+            <div className="hidden md:block absolute inset-0 -z-20 w-full h-full">
                 <img
                     src="/dog1.png"
                     alt="Background"
