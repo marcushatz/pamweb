@@ -11,15 +11,24 @@ const BookingCTA = () => {
     ];
 
     return (
-        <section id="book" className="relative py-24 md:py-32 [clip-path:inset(0)]">
-            {/* Unified Fixed Background (Underneath Layer Effect) */}
-            <div className="fixed inset-0 w-full h-full -z-50">
+        <section id="book" className="relative py-24 md:py-32 md:[clip-path:inset(0)]">
+            {/* Desktop Background (Fixed Window Effect) */}
+            <div className="hidden md:block fixed inset-0 w-full h-full -z-50">
                 <img
                     src="/dog1.png"
                     alt="Background"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover scale-[1.5]"
                 />
             </div>
+
+            {/* Mobile Background (Classic Fixed/Parallax) */}
+            <div
+                className="md:hidden absolute inset-0 -z-50 w-full h-full bg-fixed bg-center bg-no-repeat"
+                style={{
+                    backgroundImage: "url('/dog1.png')",
+                    backgroundSize: 'auto 110%'
+                }}
+            />
 
             {/* Shared Dark Overlay */}
             <div className="absolute inset-0 bg-black/40 -z-40" />
@@ -44,7 +53,7 @@ const BookingCTA = () => {
                         href="tel:302-943-0873"
                         className="group inline-flex items-center gap-3 bg-white text-charcoal px-10 py-5 rounded-full font-medium transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_40px_rgba(255,255,255,0.3)] hover:-translate-y-1"
                     >
-                        Book Your Meet & Greet
+                        Call us to Schedule
                         <svg className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>

@@ -4,14 +4,10 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative bg-[var(--color-charcoal)] text-[var(--color-cream)] py-20 overflow-hidden font-light isolate">
-            {/* Subtle decorative elements layer */}
-            <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--color-sage)]/30 to-transparent" />
-                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-radial-gradient from-[var(--color-sage)]/10 to-transparent opacity-50" />
-            </div>
-
-            {/* Content layer */}
+        <footer className="relative bg-[var(--color-charcoal)] text-[var(--color-cream)] py-20 overflow-hidden font-light">
+            {/* Subtle decorative elements */}
+            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--color-sage)]/30 to-transparent" />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-radial-gradient from-[var(--color-sage)]/10 to-transparent opacity-50" />
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-3 gap-12 mb-12">
                     {/* Brand */}
@@ -34,21 +30,21 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white relative z-50">Contact</h4>
-                        <div className="space-y-3 text-white/70 text-sm font-normal">
+                        <h4 className="font-medium mb-5 text-white text-sm tracking-wide">Contact</h4>
+                        <div className="space-y-3 text-white/50 text-sm">
                             <p>Melbourne, Florida</p>
                             <a
-                                href="tel:302-943-0873"
+                                href="mailto:hello@whiskersandwags.com"
                                 className="hover:text-white transition-colors duration-300 block"
                             >
-                                302-943-0873
+                                hello@whiskersandwags.com
                             </a>
                         </div>
                     </div>
 
                     {/* Social */}
                     <div>
-                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white relative z-50">Connect</h4>
+                        <h4 className="font-medium mb-5 text-white text-sm tracking-wide">Connect</h4>
                         <a
                             href="https://www.facebook.com/profile.php?id=100095399083409"
                             target="_blank"
