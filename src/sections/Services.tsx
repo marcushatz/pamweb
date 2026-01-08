@@ -67,17 +67,17 @@ const Services = () => {
     ];
 
     return (
-        <section id="services" className="section relative overflow-hidden bg-cream">
-            {/* Simple clean background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white to-cream" />
+        <section id="services" className="section relative overflow-hidden">
+            {/* Rich gradient background matching Service Area */}
+            <div className="absolute inset-0" style={{ backgroundColor: '#f2f7f4' }} />
 
             {/* Decorative pattern */}
-            <div className="absolute inset-0 pattern-diagonal opacity-40" />
+            <div className="absolute inset-0 pattern-waves" />
 
-            {/* Decorative blobs */}
-            <div className="absolute top-20 left-0 w-[500px] h-[500px] blob-sage-strong opacity-40" />
-            <div className="absolute bottom-0 right-0 w-[600px] h-[600px] blob-coastal opacity-40" />
-            <div className="absolute top-1/2 right-1/4 w-[350px] h-[350px] blob-lavender opacity-50" />
+            {/* Decorative blobs matching Service Area */}
+            <div className="absolute top-0 left-1/4 w-[400px] h-[400px] blob-coastal opacity-50" />
+            <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] blob-sage-strong opacity-35" />
+            <div className="absolute top-1/2 right-0 w-[350px] h-[350px] blob-sage opacity-50" />
 
             <div className="container mx-auto px-6 relative z-10">
                 {/* Header */}
@@ -92,6 +92,29 @@ const Services = () => {
                         Every pet is unique, and their care should be too. Choose the service that
                         fits your pet's personality and needs.
                     </p>
+
+                    {/* Additional Perks - Highlighted */}
+                    <div className="mt-12 mb-8 text-center">
+                        <div className="inline-flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center bg-white/80 backdrop-blur-md px-10 py-4 rounded-full border-2 border-sage/20 shadow-lg shadow-sage/5 hover:border-sage/30 hover:shadow-sage/10 transition-all duration-300 transform hover:-translate-y-0.5">
+                            <div className="flex items-center gap-3">
+                                <div className="w-8 h-8 rounded-full bg-sage/15 flex items-center justify-center ring-2 ring-sage/10">
+                                    <svg className="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span className="text-lg text-charcoal font-medium tracking-tight whitespace-nowrap">Free Meet and Greets</span>
+                            </div>
+                            <div className="hidden md:block w-px h-8 bg-sage/20" />
+                            <div className="flex items-center gap-3">
+                                <div className="w-8 h-8 rounded-full bg-sage/15 flex items-center justify-center ring-2 ring-sage/10">
+                                    <svg className="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span className="text-lg text-charcoal font-medium tracking-tight whitespace-nowrap">Daily Updates & Photos</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Services Grid */}
