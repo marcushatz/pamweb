@@ -30,8 +30,8 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-medium mb-5 text-white text-sm tracking-wide opacity-100">Contact</h4>
-                        <div className="space-y-3 text-white/50 text-sm">
+                        <h4 className="font-semibold mb-5 text-white text-base tracking-wide uppercase opacity-100">Contact</h4>
+                        <div className="space-y-3 text-white/70 text-sm font-normal">
                             <p>Melbourne, Florida</p>
                             <a
                                 href="tel:302-943-0873"
@@ -44,7 +44,7 @@ const Footer = () => {
 
                     {/* Social */}
                     <div>
-                        <h4 className="font-medium mb-5 text-white text-sm tracking-wide">Connect</h4>
+                        <h4 className="font-semibold mb-5 text-white text-base tracking-wide uppercase opacity-100">Connect</h4>
                         <a
                             href="https://www.facebook.com/profile.php?id=100095399083409"
                             target="_blank"
