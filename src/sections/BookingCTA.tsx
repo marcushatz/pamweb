@@ -11,25 +11,14 @@ const BookingCTA = () => {
     ];
 
     return (
-        <section id="book" className="relative z-0 py-24 md:py-32 overflow-hidden">
-            {/* Background Image - Absolute & Static (Mobile) */}
+        <section id="book" className="relative z-0 py-24 md:py-32">
+            {/* Background Image - Absolute, Fixed & Covered (Unified) */}
             <div
-                className="absolute inset-0 -z-20 w-full h-full bg-fixed bg-center bg-no-repeat md:hidden"
+                className="absolute inset-0 -z-20 w-full h-full bg-fixed bg-center bg-no-repeat bg-cover md:bg-[length:120%]"
                 style={{
-                    backgroundImage: "url('/dog1.png')",
-                    backgroundSize: 'auto 200%'
+                    backgroundImage: "url('/dog1.png')"
                 }}
             />
-
-            {/* Background Image - Absolute & Zoomed (Desktop) */}
-            <div className="hidden md:block absolute inset-0 -z-20 w-full h-full">
-                <img
-                    src="/dog1.png"
-                    alt="Background"
-                    className="w-full h-full object-cover"
-                    style={{ transform: 'scale(1.25)' }}
-                />
-            </div>
 
             {/* Dark overlay for contrast */}
             <div className="absolute inset-0 bg-black/40 -z-10" />
