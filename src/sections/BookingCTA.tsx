@@ -26,7 +26,7 @@ const BookingCTA = () => {
                 className="md:hidden absolute inset-0 -z-50 w-full h-full bg-fixed bg-center bg-no-repeat"
                 style={{
                     backgroundImage: "url('/dog1.png')",
-                    backgroundSize: 'auto 110%'
+                    backgroundSize: 'cover'
                 }}
             />
 
@@ -50,7 +50,7 @@ const BookingCTA = () => {
 
                     {/* CTA Button */}
                     <a
-                        href="mailto:hello@whiskersandwags.com"
+                        href="tel:302-943-0873"
                         className="group inline-flex items-center gap-3 bg-white text-charcoal px-10 py-5 rounded-full font-medium transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_40px_rgba(255,255,255,0.3)] hover:-translate-y-1"
                     >
                         Book Your Meet & Greet

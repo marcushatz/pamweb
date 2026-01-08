@@ -4,11 +4,15 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative bg-[var(--color-charcoal)] text-[var(--color-cream)] py-20 overflow-hidden font-light">
-            {/* Subtle decorative elements */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--color-sage)]/30 to-transparent z-0" />
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-radial-gradient from-[var(--color-sage)]/10 to-transparent opacity-50 z-0" />
-            <div className="container mx-auto px-6 relative z-20">
+        <footer className="relative bg-[var(--color-charcoal)] text-[var(--color-cream)] py-20 overflow-hidden font-light isolate">
+            {/* Subtle decorative elements layer */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--color-sage)]/30 to-transparent" />
+                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-radial-gradient from-[var(--color-sage)]/10 to-transparent opacity-50" />
+            </div>
+
+            {/* Content layer */}
+            <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-3 gap-12 mb-12">
                     {/* Brand */}
                     <div>
@@ -30,7 +34,7 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white/70" style={{ position: 'relative', zIndex: 50 }}>Contact</h4>
+                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white/70">Contact</h4>
                         <div className="space-y-3 text-white/70 text-sm font-normal">
                             <p>Melbourne, Florida</p>
                             <a
@@ -44,7 +48,7 @@ const Footer = () => {
 
                     {/* Social */}
                     <div>
-                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white/70" style={{ position: 'relative', zIndex: 50 }}>Connect</h4>
+                        <h4 className="font-medium mb-5 text-xs tracking-wide text-white/70">Connect</h4>
                         <a
                             href="https://www.facebook.com/profile.php?id=100095399083409"
                             target="_blank"
