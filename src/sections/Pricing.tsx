@@ -59,7 +59,7 @@ const Pricing = () => {
             title: "Overnight Care",
             details: [
                 { label: "In-Client's Home (12hrs)", price: "$85" },
-                { label: "Boarding (In-Sitter's Home)", price: "$40/night" }
+                { label: "Boarding (In Our Home)", price: "$40/night" }
             ],
             notes: [
                 "$85 rate includes one 30-min check-in (7pm-7am)",

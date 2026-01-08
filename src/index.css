@@ -97,7 +97,7 @@ p {
 
 /* Selection styling */
 ::selection {
-  background-color: var(--color-sage);
+  background-color: var(--color-charcoal);
   color: white;
 }
 
